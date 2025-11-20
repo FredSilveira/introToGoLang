@@ -1,5 +1,28 @@
-Day 1
-Started the file with a basic structure:
+# Day 1
+## Project Setup
+Installed Go via Brew: ```brew install go.```
+
+```
+mkdir introToGoLang
+cd introToGoLang
+go version
+touch main.go
+ll 
+go mod init introGoLang
+go mod tidy
+```
+
+## Running the project
+### To run the project use two terminal windows:
+
+One to start server<br/>
+```go run main.go```<br/>
+
+Another for requests<br/>
+```curl --get localhost:3009```
+
+## First lines of code
+### Started the file with a basic structure:
 ```
 package main
 
@@ -28,7 +51,7 @@ func main() {
 }
 ```
 
-Replaced it with:
+### Replaced it with:
 ```
 package main
 
